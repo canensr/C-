@@ -1,0 +1,21 @@
+Bilgisayara girilen iki farklı sayıdan küçük olanını bulan ve listeleyen bir program yazınız.
+
+#include "stdafx.h"
+#include<iostream>
+#include<math.h>
+using namespace std;
+int _tmain(int argc, _TCHAR* argv[])
+{ float a, b, kuc;
+cout << "İki farkli sayi giriniz:\n";
+if( cin >> a && cin >> b)
+{
+if( a < b )
+kuc = a;
+else
+kuc = b;
+cout << "\nKUCUK SAYI: " << kuc << endl;
+}
+else
+cout << "\nGIRIS HATALI!" << endl;
+return 0;
+}

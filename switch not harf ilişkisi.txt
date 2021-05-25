@@ -1,0 +1,27 @@
+Bir öğrencinin notu 0-100 arasında bir rakamdır.Not 100 ise harfli olarak A,90-100 arasında
+ise A-,80-90 arasında ise B,70-80 arasında ise B-,60-70 arasında ise C,50-60 arasında ise D ve
+50’den düşük ise F olacaktır.Buna göre sayısal not girildiğinde harfli notu hesaplayan bir C++
+programı yazınız.
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+#include <cmath>
+main()
+{
+int NOT;
+cout<<"100 uzerinden notu giriniz...";cin >> NOT;
+switch (NOT/10)
+{ cout<<endl;
+case 10: cout << "A" << endl; break;
+case 9: cout << "A-" << endl; break;
+case 8: cout << "B" << endl; break;
+case 7: cout << "B-" << endl; break;
+case 6: cout << "C" << endl; break;
+case 5: cout << "D" << endl; break;
+case 4: case 3: case 2: case 1: case 0:
+cout << "F" << endl; break;
+default: cout << "GECERSIZ NOT" << endl;
+}
+cout<<endl;
+}

@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include "iostream.h"
+int _tmain(int argc, _TCHAR* argv[])
+{
+float s,say,ort;
+int c;
+s=0;
+c=0;
+cout<<"SAYI GIRISINE SON VERMEK ICIN NEGATIF SAYI
+GIRINIZ.."<<endl;
+while(true)
+{ cout<<"SAYI...";
+cin>>say;
+if(say<0) break;
+s+=say;
+c++;
+}
+ort=s/c;
+cout<<"SAYILARIN TOPLAMI="<<s<<endl;
+cout<<"SAYILARIN ORTALAMASI="<<ort<<endl;
+cout<<"GİRİLEN SAYI MİKTARI="<<c<<endl;
+cin>>c;
+}

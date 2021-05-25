@@ -1,0 +1,20 @@
+Müze girişleri 12 yaş ve altı çocuklara ve 65 yaşın üstündeki yaşlılara ücretsizdir.Bilgisayara
+ziyaretçinin yaşı girildiğinde ücret ödeyip ödemeyeceğini bildiren bir C++ programı yazınız.
+
+
+#include "stdafx.h"
+#include<iostream>
+#include<math.h>
+using namespace std;
+int _tmain(int argc, _TCHAR* argv[])
+{ int YAS;
+cout << "YASINIZI GIRIN: ";
+cin >> YAS;
+if (YAS > 12)
+if (YAS >= 65)
+cout << "UCRETSIZ\n\n";
+else
+cout << "ODEME YAPILACAK\n\n";
+else
+cout << "UCRETSIZ\n\n";
+return 0;

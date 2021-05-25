@@ -1,0 +1,18 @@
+#include <cstdlib>
+#include <iostream>
+#include <math.h>//matematik işlemleri için gerekli kütüphanemiz
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    float kok;
+    
+    cout<<"KAREKOKU ALINACAK SAYI : ";
+    cin>>kok;
+    
+    cout<<kok<<" SAYISININ KAREKOKU = "<<sqrt(kok)<<endl;   
+    
+    
+    system("PAUSE"); 
+}

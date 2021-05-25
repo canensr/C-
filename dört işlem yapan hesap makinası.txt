@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+void main()
+{
+double sayi1;
+double sayi2;
+int islem;
+cout<<"DORT İSLEM MAKINASI:"<<endl;
+cout<<"BIRINCI SAYI:: ";
+cin>>sayi1;
+cout<<"IKINCI SAYI:: ";
+cin>>sayi2;
+cout<<"ISLEM (1=+,2=-,3=*,4=/): ";
+cin>>islem;
+switch(islem)
+{
+case 1:
+cout<<"TOPLAM="<<sayi1+sayi2<<endl;
+break;
+case 2:
+cout<<"FARK="<<sayi1-sayi2<<endl;
+break;
+case 3:
+cout<<"CARPIM="<<sayi1*sayi2<<endl;
+break;
+case 4:
+cout<<"BOLUM="<<sayi1/sayi2<<endl;
+break;
+default:cout<<"HATALI SAYI GIRDINIZ,1-4 ARASI BIR SAYI
+GIRMELISINIZ"<<endl;
+};
+};

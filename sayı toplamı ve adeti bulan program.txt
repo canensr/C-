@@ -1,0 +1,21 @@
+Bilgisayara girilen sayıların toplamını bulan ve kaç adet sayı girildiğini izleyen ve yazdıran
+bir C++ programı yazınız.Sayı girişi negatif sayı ile durdurulacaktır.
+
+
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+int _tmain(int argc, _TCHAR* argv[])
+{ int say;int i=1;
+cout<<"BIR SAYI GIRINIZ...";
+cin>>say;int s=0;
+while(say>=0)
+{s=s+say;i++;
+cout<<"BIR SAYI GIRINIZ...";
+cin>>say;}
+cout<<i-1<<" ADET SAYI GIRDINIZ...";
+cout<<"SAYILARIN TOPLAMI="<<s<<endl;
+int a;
+cin>>a;
+return 0;
+}

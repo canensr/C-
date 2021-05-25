@@ -1,0 +1,101 @@
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+int main()
+
+{
+	int sifre, a, b, h, secim;
+	string kullanıcıAdı;
+	char cokgen;
+	cout << "Lutfen kullanici adinizi giriniz :" << endl;
+	getline(cin, kullanıcıAdı);
+sifre:cout << "Sifrenizi giriniz" << endl;
+	cin >> sifre;
+	if (sifre == 18021802)
+	{
+	    secim1:cout << "Yapmak istediginiz islemi seciniz : \n 1)Alan hesaplari \n 2) Cevre hesaplari \n 3)Cikis" << endl;
+		cin >> secim;
+		if (secim == 1)
+		{
+			cout << "Alanini bulmak istediginiz geometrik sekli seciniz : \n a)Kare alanı \n b) Ucgen alani \n c)Dikdortgen alani\n d)Bir onceki menuye don " << endl;
+			cin >> cokgen;
+			if (cokgen == 'a' || cokgen == 'A')
+			{
+				cout << "Lutfen karenin bir kenar uzunlugunu giriniz  :" << endl;
+				cin >> a;
+				cout << "Karenizin alanı =" << pow(a, 2) << endl;
+				goto secim1;
+			}
+			else if (cokgen == 'b' || cokgen == 'B')
+			{
+				cout << "Ucgenin taban uzunlugu ve yuksekligini sirasi ile giriniz  :" << endl;
+				cin >> a >> h;
+				cout << "Ucgenin alanı = " << a * h / 2 << endl;
+				goto secim1;
+
+			}
+			else if (cokgen == 'c' || cokgen == 'C')
+			{
+				cout << "Dikdortgenin kisa ve uzun kenarini veriniz  : " << endl;
+				cin >> a >> b;
+				cout << "Dikdortgenin alanı = " << a * b << endl;
+			}
+			  
+			else if (cokgen == 'd' || cokgen == 'D')
+				goto secim1;
+			else
+				goto son;
+		}
+		else if (secim == 2)
+		{
+
+			cout << "Cevresini bulmak istediginiz cokgeni giriniz  : \n a)Kare cevresi \n b)Ucgen cevresi \n c)Dikdortgen cevresi \n d)Bir onceki menuye don" << endl;
+			cin >> cokgen;
+			if (cokgen == 'a' || cokgen == 'A')
+
+			{
+				cout << "Karenin bir kenarini giriniz  :" << endl;
+				cin >> a;
+				cout << "Karenin cevresi = " << 4 * a << endl;
+				goto secim1;
+
+			}
+			else if (cokgen == 'b' || cokgen == 'B')
+			{
+				cout << "Ucgenin kenar uzunluklarini sirasi ile giriniz  " << endl;
+				cin >> a >> h >> b;
+				cout << "Ucgenin cevresi = " << a + b + h << endl;
+				goto secim1;
+			}
+
+			else if (cokgen == 'c' || cokgen == 'C')
+			{
+				cout << "Dikdortgenin kisa ve uzun kenarini giriniz : " << endl;
+				cin >> a >> b;
+				cout << "Dikdortgenin cevresi = " << 2 * a + 2 * b << endl;
+				goto secim1;
+
+			}
+			else if (cokgen == 'd' || cokgen == 'D')
+			{
+
+
+				goto secim1;
+			}
+			else 
+			{
+				goto secim1;
+			}
+		}
+	    else
+		{
+        goto son;
+		}
+	}
+	else
+		cout << "Sifreniz yanlis yeniden deneyiniz" << endl;
+	     goto sifre;
+	son:system("pause");
+}
